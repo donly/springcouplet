@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/sl/index",
+    "pages/xl/index",
+    "pages/hp/index",
+    "pages/article/index",
+    "pages/couplet/index",
+    "pages/show/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9e4547",
+    "navigationBarTitleText": "春联对联",
+    "navigationBarTextStyle": "white"
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

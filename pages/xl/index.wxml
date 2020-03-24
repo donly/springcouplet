@@ -1,0 +1,41 @@
+<!--pages/xl/index.wxml-->
+<view class="section">
+  <view class="section__title"></view>
+  <form class='flex-wrp' style="flex-direction:column;" bindsubmit='getHangpiSubmit'>
+    <view class='flex-wrp padding' style="flex-direction:column;">
+      <view class='flex-wrp'>
+        <text class='shanglian'>上联</text>
+        <view class='input_view' style="background:url(https://duilian.msra.cn/app/images/input.gif) no-repeat center;background-size:100% 100%;">
+          <input class="shanglian_input" name='shanglian' disabled='true' value='{{sl}}'/>
+        </view>
+      </view>
+      <view class='flex-wrp padding'>
+        <text class='shanglian'>下联</text>
+        <view class='input_view' style="background:url(https://duilian.msra.cn/app/images/input.gif) no-repeat center;background-size:100% 100%;">
+          <input class="shanglian_input" name='xialian' value='{{selectedxl}}'/>
+        </view>
+      </view>
+    </view>
+    <button class='couplet_button' form-type='submit'>题横批</button>
+  </form>
+  <view id='candidate' class='border note_title' style='padding-top:40rpx;'><text class='shanglian'>候选下联</text></view>
+  <scroll-view
+    scroll-y
+    style="height: {{scrollHeight}}px;"
+  >
+    <view class='flex-wrp' style="flex-direction:column;justify-content:center;">
+      <block wx:for="{{xlArr}}" wx:key="*this">
+      <view class='flex-wrp' style='padding-top:10rpx;' data-text="{{item}}" bindtap='selectXialianTap'>
+        <image src="https://duilian.msra.cn/app/images/{{item===selectedxl?'pick':'none-pick'}}.gif" style='width:19px;height:19px;'></image>
+        <text style="color:{{item===selectedxl?'#790000':'black'}};">{{item}}</text>
+      </view>
+      </block>
+    </view>
+  </scroll-view>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__links">
+      <button open-type='contact' class="weui-footer__link buttonlink">举报</button>
+    </view>
+    <view class="weui-footer__text">数据来自微软“电脑对联”</view>
+  </view>
+</view>

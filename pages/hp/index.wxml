@@ -1,0 +1,50 @@
+<!--pages/hp/index.wxml-->
+<text>{{model}}</text>
+<view class="section">
+  <view class="section__title"></view>
+  <form class='flex-wrp' style="flex-direction:column;"  bindsubmit="formSubmit">
+    <view class='flex-wrp padding' style='justify-content: center;'>
+      <text class='shanglian'>横批</text>
+      <view class='input_view_hp' style="background:url(https://duilian.msra.cn/app/images/step3inputbg1.gif) no-repeat center;background-size:100% 100%;">
+        <input class="hangpi" name='hp' bindinput='bindinput' value='{{selectedhp}}'></input>
+      </view>
+    </view>
+    <view class='flex-wrp padding' style="flex-direction:column;">
+      <view class='flex-wrp' style="flex-direction:row;">
+        <text class='shanglian'>上联</text>
+        <view class='input_view' style="background:url(https://duilian.msra.cn/app/images/input.gif) no-repeat center;background-size:100% 100%;">
+          <input class="shanglian_input" disabled='true' value='{{sl}}'/>
+        </view>
+      </view>
+      <view class='flex-wrp padding' style="flex-direction:row;">
+        <text class='shanglian'>下联</text>
+        <view class='input_view' style="background:url(https://duilian.msra.cn/app/images/input.gif) no-repeat center;background-size:100% 100%;">
+          <input class="shanglian_input" disabled='true' value='{{xl}}'/>
+        </view>
+      </view>
+    </view>
+    <button class='couplet_button' bindtap='showMyCouplet' form-type='submit'>秀对联</button>
+    <view class='padding'></view>
+    <button class='couplet_button' bindtap='showMSCouplet' form-type='submit'>微软对联</button>
+  </form>
+  <view id='candidate' class='border' style='padding-top:20rpx;padding-left:20rpx;'><text class='shanglian'>候选横批</text></view>
+  <scroll-view
+    scroll-y
+    style="height: {{scrollHeight}}px;"
+  >
+    <view class='flex-wrp shanglian_demo' style="flex-direction:column;">
+      <block wx:for="{{hpArray}}" wx:key="*this">
+      <view class='flex-wrp' style='padding-top:10rpx;' data-text="{{item}}" bindtap='selectHangpiTap'>
+        <image src="https://duilian.msra.cn/app/images/{{item===selectedhp?'pick':'none-pick'}}.gif" style='width:19px;height:19px;'></image>
+        <text style="color:{{item===selectedhp?'#790000':'black'}};">{{item}}</text>
+      </view>
+      </block>
+    </view>
+  </scroll-view>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__links">
+      <button open-type='contact' class="weui-footer__link buttonlink">举报</button>
+    </view>
+    <view class="weui-footer__text">数据来自微软“电脑对联”</view>
+  </view>
+</view>

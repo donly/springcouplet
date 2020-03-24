@@ -1,0 +1,45 @@
+/* pages/hp/index.wxss */
+@import '../xl/index.wxss';
+
+.input_view_hp {
+  width: 230rpx;
+	height: 78rpx;
+}
+
+.hangpi {
+  width: 230rpx;
+	height: 78rpx;
+  font-size: 40rpx;
+	background-repeat: no-repeat;
+	border-left-style: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-left: 20rpx;
+	vertical-align: middle;
+	background-position: center;
+	background-color: Transparent;
+	letter-spacing: 3px;
+}
+.hxhp {
+  width: 97px;
+  height: 19px;
+}
+
+.xiuduilian {
+  border: none;
+  padding: 0;
+  width: 56px;
+  height: 56px;
+  background-image: url(https://duilian.msra.cn/app/images/button3.gif)
+}
+
+.buttonlink {
+  background: none !important;
+}
+
+.buttonlink:after {
+  border: none;
+}

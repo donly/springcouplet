@@ -1,0 +1,31 @@
+/* pages/couplet/index.wxss */
+@import '../show/index.wxss';
+
+.optiongroup {
+  background-color: white;
+  width: 640rpx;
+  height: 100rpx;
+  display: flex;
+  margin-left: 54rpx;
+  padding: 0;
+}
+
+.buttongroup {
+  margin:30rpx 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.checkboxtext {
+  font-size: 30rpx;
+  line-height:32rpx;
+  color: #9e4547;
+}
+
+.single_button {
+  font-size: 44rpx;
+  position:relative;
+  background-color:#9e4547;
+  color: #fff;
+  flex: 0 0 26%;
+}

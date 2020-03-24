@@ -1,0 +1,86 @@
+/* pages/wxml/index.wxss */
+@import "../../style/font.wxss"; 
+
+page {
+  background-image: url(https://duilian.msra.cn/app/images/top-image.gif);
+  background-color: #fcfcf4;
+  background-repeat: no-repeat;
+}
+.section__title{
+  padding-left: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.flex-wrp {
+  display: flex;
+  align-items: center;
+}
+
+.padding {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.padding_sl {
+  padding:40rpx 0;
+}
+
+.flex-item {display: flex; align-items: center; justify-content: center;}
+.input_view {
+  width: 608rpx;
+  height: 72rpx;
+}
+
+.shanglian_input {
+	width: 608rpx;
+	height: 72rpx;
+  font-size: 40rpx;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-left: 20rpx;
+	vertical-align: middle;
+	border-left-style: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	background-color: Transparent;
+	/* letter-spacing: 10rpx; */
+}
+
+.note_title {
+  padding-left: 20rpx;
+}
+
+.shanglian {
+  font-family: 'miniguli';
+  font-size: 44rpx;
+  color: #a59059;
+  width:96rpx;
+  height:44rpx;
+  line-height:44rpx;
+  align-content: center;
+}
+
+.border {
+ border-style: none none dashed none;
+ border-width: 0px 0px 1px 0px;
+ border-color: #999;
+}
+
+.couplet_button {
+  font-family: 'miniguli';
+  font-size: 38rpx;
+  position:relative;
+  background-color:#9e4547;
+  color: #fff;
+  height:80rpx;
+}
+
+.buttongroup {
+  margin:30rpx 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonView {
+  display: flex;
+}
