@@ -3,7 +3,7 @@
    */
 const isValidChineseString = (string, retHandler) => {
   wx.request({
-    url: 'https://duilian.msra.cn/app/CoupletsWS_V2.asmx/IsValidChineseString',
+    url: 'https://couplet.propgm.cn/app/CoupletsWS_V2.asmx/IsValidChineseString',
     data: {
       inputString: string
     },
@@ -22,7 +22,7 @@ const isValidChineseString = (string, retHandler) => {
  * 获取 token
  */
 const tokenRequest = (sl, xl, hp, retHandler) => {
-  const url = 'https://duilian.msra.cn/app/RedirectPage.aspx'
+  const url = 'https://couplet.propgm.cn/app/RedirectPage.aspx'
 
   wx.request({
     url: url,

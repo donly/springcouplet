@@ -4,6 +4,6 @@
 
 
 ## 特别感谢：
-- [微软对联](https://duilian.msra.cn/default.htm)
+- [微软对联](http://duilian.msra.cn.cn/default.htm)
 - 小程序生成图片库 [Painter](https://github.com/Kujiale-Mobile/Painter)
 

@@ -129,7 +129,7 @@ Page({
    */
   getXialianRequest: function (shanglian, retHandler) {
     wx.request({
-      url: 'https://duilian.msra.cn/app/CoupletsWS_V2.asmx/GetXiaLian',
+      url: 'https://couplet.propgm.cn/app/CoupletsWS_V2.asmx/GetXiaLian',
       data: {
         shanglian: shanglian,
         xialianLocker: '0'.repeat(shanglian.length),

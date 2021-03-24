@@ -152,7 +152,7 @@ Page({
    */
   getHangpiRequest: function (shanglian, xialian, retHandler) {
     wx.request({
-      url: 'https://duilian.msra.cn/app/CoupletsWS_V2.asmx/GetHengPi',
+      url: 'https://couplet.propgm.cn/app/CoupletsWS_V2.asmx/GetHengPi',
       data: {
         shanglian: shanglian,
         xialian: xialian

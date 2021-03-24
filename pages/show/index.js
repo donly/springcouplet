@@ -111,7 +111,7 @@ Page({
    */
    templateRequest: function() {
      wx.request({
-       url: 'https://duilian.msra.cn/app/CoupletsWS_V2.asmx/GetTemplates',
+       url: 'https://couplet.propgm.cn/app/CoupletsWS_V2.asmx/GetTemplates',
        method: 'POST',
        data: {
          tag: 'mobile',
@@ -120,7 +120,7 @@ Page({
          console.log('key=', context.key)
          const templates = res.data.d
          console.log('templates=', templates)
-         let imageUrl = 'https://duilian.msra.cn/app/RenderImage.ashx?S='+context.sl+'&X='+context.xl+'&H='+context.hp+'&K='+context.key+'&st='+templates[0]+'&ft=STLiti&wd=480&ht=640&df=0'
+         let imageUrl = 'https://couplet.propgm.cn/app/RenderImage.ashx?S='+context.sl+'&X='+context.xl+'&H='+context.hp+'&K='+context.key+'&st='+templates[0]+'&ft=STLiti&wd=480&ht=640&df=0'
          console.log('imageUrl=', imageUrl)
          context.setData({
            templates: templates,

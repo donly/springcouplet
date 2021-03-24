@@ -2,7 +2,7 @@
 @import "../../style/font.wxss"; 
 
 page {
-  background-image: url(https://duilian.msra.cn/app/images/top-image.gif);
+  background-image: url(http://duilian.msra.cn/app/images/top-image.gif);
   background-color: #fcfcf4;
   background-repeat: no-repeat;
 }
