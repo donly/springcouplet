@@ -5,20 +5,20 @@
   <form class='flex-wrp' style="flex-direction:column;"  bindsubmit="formSubmit">
     <view class='flex-wrp padding' style='justify-content: center;'>
       <text class='shanglian'>横批</text>
-      <view class='input_view_hp' style="background:url(http://duilian.msra.cn/app/images/step3inputbg1.gif) no-repeat center;background-size:100% 100%;">
+      <view class='input_view_hp' style="background:url(https://www.propgm.cn/img/couplet/step3inputbg1.gif) no-repeat center;background-size:100% 100%;">
         <input class="hangpi" name='hp' bindinput='bindinput' value='{{selectedhp}}'></input>
       </view>
     </view>
     <view class='flex-wrp padding' style="flex-direction:column;">
       <view class='flex-wrp' style="flex-direction:row;">
         <text class='shanglian'>上联</text>
-        <view class='input_view' style="background:url(http://duilian.msra.cn/app/images/input.gif) no-repeat center;background-size:100% 100%;">
+        <view class='input_view' style="background:url(https://www.propgm.cn/img/couplet/input.gif) no-repeat center;background-size:100% 100%;">
           <input class="shanglian_input" disabled='true' value='{{sl}}'/>
         </view>
       </view>
       <view class='flex-wrp padding' style="flex-direction:row;">
         <text class='shanglian'>下联</text>
-        <view class='input_view' style="background:url(http://duilian.msra.cn/app/images/input.gif) no-repeat center;background-size:100% 100%;">
+        <view class='input_view' style="background:url(https://www.propgm.cn/img/couplet/input.gif) no-repeat center;background-size:100% 100%;">
           <input class="shanglian_input" disabled='true' value='{{xl}}'/>
         </view>
       </view>
@@ -35,7 +35,7 @@
     <view class='flex-wrp shanglian_demo' style="flex-direction:column;">
       <block wx:for="{{hpArray}}" wx:key="*this">
       <view class='flex-wrp' style='padding-top:10rpx;' data-text="{{item}}" bindtap='selectHangpiTap'>
-        <image src="http://duilian.msra.cn/app/images/{{item===selectedhp?'pick':'none-pick'}}.gif" style='width:19px;height:19px;'></image>
+        <image src="https://www.propgm.cn/img/couplet/{{item===selectedhp?'pick':'none-pick'}}.gif" style='width:19px;height:19px;'></image>
         <text style="color:{{item===selectedhp?'#790000':'black'}};">{{item}}</text>
       </view>
       </block>

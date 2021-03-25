@@ -4,15 +4,15 @@
   <image src='{{imagePath}}' style='width:640rpx;height:867rpx;margin-left:54rpx;margin-top:40rpx;display:block;'></image>
   <view class="optiongroup">
     <view class='flex-wrp order-options' bindtap='exchangedl'>
-      <image src="http://duilian.msra.cn/app/images/check-box-{{isExchange?'check':'empty'}}.gif" style='width:25px;height:25px;'></image>
+      <image src="https://www.propgm.cn/img/couplet/check-box-{{isExchange?'check':'empty'}}.gif" style='width:25px;height:25px;'></image>
       <text class='checkboxtext'>上下联调换</text>
     </view>
     <view class='flex-wrp order-options' bindtap='reversehpTap'>
-      <image src="http://duilian.msra.cn/app/images/check-box-{{isReverse?'check':'empty'}}.gif" style='width:25px;height:25px;'></image>
+      <image src="https://www.propgm.cn/img/couplet/check-box-{{isReverse?'check':'empty'}}.gif" style='width:25px;height:25px;'></image>
       <text class='checkboxtext'>横批方向</text>
     </view>
     <view class='flex-wrp order-options' bindtap='big5Tap'>
-      <image src="http://duilian.msra.cn/app/images/check-box-{{isBig5?'check':'empty'}}.gif" style='width:25px;height:25px;'></image>
+      <image src="https://www.propgm.cn/img/couplet/check-box-{{isBig5?'check':'empty'}}.gif" style='width:25px;height:25px;'></image>
       <text class='checkboxtext'>繁体</text>
     </view>
   </view>

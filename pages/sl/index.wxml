@@ -3,7 +3,7 @@
   <form class='flex-wrp' style="flex-direction:column;" bindsubmit='getXialianSubmit'>
     <view class='flex-wrp padding_sl'>
       <text class='shanglian'>上联</text>
-      <view class='input_view' style="background:url(http://duilian.msra.cn/app/images/input.gif) no-repeat center;background-size:100% 100%;">
+      <view class='input_view' style="background:url(https://www.propgm.cn/img/couplet/input.gif) no-repeat center;background-size:100% 100%;">
         <input class="shanglian_input" placeholder='最多可输入十个字' maxlength='10' bindinput='bindinput' name='shanglian' value='{{selectedsl}}'/>
       </view>
     </view>
@@ -17,7 +17,7 @@
     <view class='flex-wrp shanglian_demo' style="flex-direction:column;">
     <block wx:for="{{recommendsl}}" wx:key="*this">
     <view class='flex-wrp' style='padding-top:10rpx;' data-text="{{item}}" bindtap='selectShanglianTap'>
-      <image src="http://duilian.msra.cn/app/images/{{item===selectedsl?'pick':'none-pick'}}.gif" style='width:19px;height:19px;'></image>
+      <image src="https://www.propgm.cn/img/couplet/{{item===selectedsl?'pick':'none-pick'}}.gif" style='width:19px;height:19px;'></image>
       <text style="color:{{item===selectedsl?'#790000':'black'}};">{{item}}</text>
     </view>
     </block>

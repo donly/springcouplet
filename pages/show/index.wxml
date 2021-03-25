@@ -15,17 +15,17 @@
   </view>
   <!-- <view class="order-options flex-wrp">
     <view class='flex-wrp'>
-      <image bindtap='tooglesxlTap' src="http://duilian.msra.cn/app/images/check-box-{{item===selectedsl?'check':'empty'}}.gif" style='width:25px;height:25px;'></image>
+      <image bindtap='tooglesxlTap' src="https://www.propgm.cn/img/couplet/check-box-{{item===selectedsl?'check':'empty'}}.gif" style='width:25px;height:25px;'></image>
       <text class='checkboxtext'>上下联调换</text>
     </view>
     <view class='flex-wrp'>
-      <image bindtap='reversehpTap' src="http://duilian.msra.cn/app/images/check-box-{{item===selectedsl?'check':'empty'}}.gif" style='width:25px;height:25px;'></image>
+      <image bindtap='reversehpTap' src="https://www.propgm.cn/img/couplet/check-box-{{item===selectedsl?'check':'empty'}}.gif" style='width:25px;height:25px;'></image>
       <text class='checkboxtext'>横批从右书写</text>
     </view>
   </view>
   <view class='font-options flex-wrp'>
     <view class='flex-wrp' wx:for="{{[1,2,3,4]}}" wx:for-item="i">
-      <image bindtap='selectFontTap' src="http://duilian.msra.cn/app/images/{{item===selectedsl?'pick':'none-pick'}}.gif" style='width:19px;height:19px;'></image>
+      <image bindtap='selectFontTap' src="https://www.propgm.cn/img/couplet/{{item===selectedsl?'pick':'none-pick'}}.gif" style='width:19px;height:19px;'></image>
       <image bindtap='selectFontTap' style='width:50px;height:20px;' mode='center' src='images/font-{{i}}.gif'></image>
     </view>
   </view> -->
